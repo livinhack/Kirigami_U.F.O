@@ -45,6 +45,7 @@
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
+          "45_degree_only": false,
           "min_clearance": 0.5
         }
       },
@@ -55,7 +56,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_overlap|177398408|64500000|bca0fa59-4b08-4ddc-9e2d-80dd3f2eeb97|6d2bf610-40b1-4097-814f-f389eb64fae8",
+        "silk_overlap|182160197|67252340|41a35e21-4c8f-4629-b478-86b027443bc6|aaebbd73-cfa1-490e-babf-0b65cfd2f6f5",
+        "silk_overlap|182162899|61752340|d9cd7d63-d1f1-4a1a-a723-e49146d800ee|3901431d-89f9-4e7b-8681-0504b6418717"
+      ],
       "meta": {
         "version": 2
       },
@@ -81,7 +86,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -91,7 +96,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -110,6 +115,8 @@
         "zones_intersect": "error"
       },
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
@@ -123,7 +130,7 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -179,7 +186,8 @@
           "drill": 0.0
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "layer_presets": [
       {
