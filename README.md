@@ -8,3 +8,12 @@ Kirigami PCB v2 U.F.O.-Edition (inspired by timmit99)
 https://github.com/livinhack/Kirigami_U.F.O/assets/91290219/f25b7a1e-6680-43ce-a2c9-361af66e349b
 
 ## [Back to Kirigami-PCB](https://github.com/livinhack/Kirigami-PCB)
+
+# Change Log #
+
+
+## V2.1:
+ - The screw terminal moves ~ 3 mm further inwards
+
+## V2:
+ - Initial U.F.O. publication
